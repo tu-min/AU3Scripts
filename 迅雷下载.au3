@@ -66,5 +66,5 @@ if $fHash<>$Hash Then
 			sleep(60000)
 			Until FileExists($aArray[$driveNum] & "\" & $SavePath & "\" & $FileName)
 	getHash()
-	Until $fHash<>$Hash
+	Until $fHash==$Hash
 EndIf
